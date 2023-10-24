@@ -1,95 +1,78 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+"use client"
+import "./style.css"
+import Link from "next/link"
+import pic1 from "../assets/bg5.png"
+
+import Image from "next/image"
+import Navbar from "@/Components/Navbar"
+import Services from "@/Components/Services"
+import Footer from "@/Components/Footer"
 
 export default function Home() {
+  // const [file, setFile] = useState()
+  //   const imageUpload =  async(e)=>{
+  //       e.preventDefault()
+       
+  //       const data = new FormData();
+  //      data.set('file', file);
+  //      let result = await fetch("http://localhost:3000/api/uploadaa", {
+  //       method: "POST",
+  //       body:data
+  //      })
+       
+  //      console.log(result)
+  //      if(result){
+  //       alert("file uploaded")
+  //      }
+  //   }
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <>
+    <Navbar/>
+   <div className="container">
+
+   <div className="main-banner">
+
+   
+    <div className="box">
+      <div className="box-hed">
+      <h1>Get The Latest Tech & Gadgets <span>Information</span>  Here </h1>
+     <p>Providing you the best details with 100% market trends</p>
       </div>
+  
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+     <div className="btn-section">
+    <button className="btn-2"><Link className="btn-2" href={'/addproduct'}>Add Product</Link></button> 
+   <button className="btn-2"><Link className="btn-2" href={'/productlist'}>Product List</Link></button> 
+    </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+    </div>
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
+<div className="right-box">
+<Image  src={pic1} width={800}
+>
 
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
+</Image>
 
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+</div>
+   
+  
+
+   {/* <h1>Image Upload in Nextjs</h1>
+<form onSubmit={imageUpload}>
+
+<input 
+
+type="file"
+ name='file' 
+ onChange={(e) => setFile(e.target.files?.[0])}
+ 
+ />
+<button>Upload Image</button>
+</form> */}
+</div>
+   </div>
+   <Services/>
+   <Footer/>
+   </>
   )
 }

@@ -1,0 +1,517 @@
+:root {
+    --text-color: white;
+    --btn-color: #1dbf73;
+    --bg-color: #232D3F;
+  }
+
+
+body{
+    background-color: #232D3F;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px 0px;
+    box-sizing: border-box;
+
+   
+}
+/* Navbar Area */
+
+.mainnav ul{
+    display: flex;
+    gap: 50px;
+    position: relative;
+    margin-top: 18px;
+    justify-content: center;
+    text-decoration: none;
+    list-style: none;
+  }
+  .li{
+    margin-top: 5px;
+    position: relative;
+    color: var(--text-color);
+  }
+  .li:hover{
+    color: var(--btn-color);
+  }
+  .mainnav a{
+    text-decoration: none;
+    list-style: none;
+  }
+
+
+
+
+/* Home Page Area */
+
+.container{
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+width: 100%;
+   color: var(--text-color);
+   background: url("../assets/blob-haikei\ \(1\).svg");
+   background-repeat: no-repeat;
+   background-size: cover;
+background-position: 280px;
+   
+  
+   
+
+}
+.main-banner{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.box{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+margin-top: 130px;
+   
+    
+}
+.box span{
+    color: var(--btn-color);
+}
+.box h1{
+   margin-left: 10px;
+    width: 600px;
+    font-size: 55px
+}
+
+.box p{
+padding: 0px 20px;
+margin-top: -10px;
+font-size: 17px;
+}
+.btn-section{
+    display: flex;
+    align-self: flex-start;
+    margin-left: 15px;
+}
+.btn-2{
+    padding: 13px 20px;
+    border-radius: 5px;
+    font-size: 14px;
+    background-color: #1dbf73;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--text-color);
+    border: none;
+    margin-right: 5px;
+   
+    
+    
+
+}
+.btn-2:hover{
+    background-color: #24e48a;
+cursor: pointer;
+}
+.right-box{
+    position: relative;
+    
+}
+/* .right-box img{
+    width: 500px;
+} */
+
+/* Services Area */
+
+.services-container{
+    height: 600px;
+    width: 100%;
+    display: flex;
+    padding: 50px 0px;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+.left-container{
+   padding-left: 10px;
+}
+.right-container{
+    display: flex;
+    align-items: center;
+    
+    flex-direction: column;
+}
+.hed h1{
+    color: var(--text-color);
+width: 600px;
+font-size: 25px;
+font-weight: 500;
+}
+.hed h3{
+    color: var(--btn-color);
+
+}
+
+/* Add product and Product list section */
+
+.container-ap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 700px;
+    color: var(--text-color);
+    
+    }
+    #here{
+        color: var(--btn-color);
+    }
+.form{
+    display: flex;
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  
+    border: 2px solid #fff;
+    background-color: #91919136;
+    border-radius: 15px;
+    width: 450px;
+    height: 600px;
+}
+
+
+.row{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+.inputs label{
+    font-size: 20px;
+
+}
+.inputs input{
+    padding: 13px 40px;
+    background-color: var(--bg-color);
+    background-color: #fff;
+    color: rgb(17, 16, 16);
+    border-radius: 5px;
+    text-align: left;
+    border: none;
+}
+.btn{
+    margin-top: 15px;
+    padding: 15px 85px;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(37 84 255);
+    background-color: var(--btn-color);
+    color: #fff;
+}
+.btn:hover{
+    background-color: #24e48a;
+    cursor: pointer;
+}
+
+
+
+/* Products List and Tables Area */
+
+.product-list-body{
+    background: url("../assets/pl-bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container-pl{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+height: 900px;
+color: var(--text-color);
+
+}
+
+table {
+    border-collapse: collapse;
+ 
+    margin: 20px;
+    border: 2px solid var(--btn-color);
+}
+
+th, td {
+    border: 2px solid #374b6e;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: var(--bg-color);
+    color: #fff;
+    border: 2px solid var(--btn-color);
+}
+
+tr:nth-child(even) {
+    background-color: var(--bg-color);
+}
+
+tr:nth-child(odd) {
+    background-color: var(--bg-color);
+}
+.heding{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.h1-hed{
+    margin-top: -20px;
+}
+.heding h1{
+    font-size: 40px;
+    
+}
+.heding span{
+    color: var(--btn-color);
+}
+
+.upper-btns{
+   margin-left: 10px;
+   margin-top: 10px;
+
+}
+.btn-3{
+    padding: 8px 8px;
+    background-color: #1dbf73;
+    border-radius: 5px;
+    border: none;
+
+    
+    cursor: pointer;
+}
+tr a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.btn-3:hover{
+    background-color: #22ab6b;
+    cursor: pointer;
+}
+/* .tr{
+    text-align: center;
+
+} */
+#btn-3-s{
+    background-color: rgb(152, 50, 50);
+    color: var(--text-color);
+}
+#btn-3-s:hover{
+    background-color: rgb(205, 64, 64);
+}
+
+
+
+/* Footer Section */
+.footer-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    flex-direction: column;
+    margin-top: 30px;
+}
+.footer-container p{
+    margin-top: -10px;
+}
+
+
+/* Responsivness Home Page */
+
+@media(max-width:1400px){
+    .box-hed h1{
+font-size: 53px;
+
+    }
+    .container{
+       display: flex;
+    }
+    .main-banner{
+       overflow-x: hidden;
+        padding: 0px 0px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        
+    }
+    
+    
+}
+/* Services Section Responsivness */
+@media (max-width:550px){
+    .services-container{
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+
+    }
+    .footer-container{
+        margin-top: 60px;
+    }
+    .footer-container p{
+text-align: center;
+    }
+}
+@media(max-width:1068px){
+    .box-hed h1{
+font-size: 45px;
+
+    }
+   
+    .main-banner{
+       
+        padding: 0px 0px;
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        
+    }
+    
+    
+    
+}
+
+
+
+@media(max-width:990px){
+    .box-hed h1{
+font-size: 45px;
+
+    }
+    .container{
+        
+        height: 600px;
+        
+       background-position: center;
+       background-size: 500px;
+    }
+    .main-banner{
+       
+        padding: 0px 0px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+gap: 30px;
+        
+    }
+    .box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+        padding: 0px 0px;
+    }
+    .right-box{
+        display: flex;
+        padding: 0px 0px;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    
+    
+}
+
+@media (max-width:649px){
+    .main-banner{
+       display: flex;
+       width: 100%;
+       flex-wrap: wrap;
+    }
+    .box{
+        align-items: center;
+        justify-content: center;
+        margin-left: 50px;
+    }
+}
+@media (max-width:370px){
+    .box{
+        align-items: center;
+        justify-content: center;
+        margin-left: 300px;
+    }
+}
+
+/* Product List Responsivness */
+
+@media(max-width:648px){
+    .heding h1{
+        font-size: 30px;
+        
+    }
+   td{
+  padding: 5px;
+
+   }
+}
+@media(max-width:580px){
+    .heding h1{
+        font-size: 25px;
+        
+    }
+   td{
+  padding: 10px 2px;
+  font-size: 13px;
+
+   }
+   .btn-3{
+    padding: 4px 4px;
+   }
+}
+@media(max-width:450px){
+    .heding h1{
+        font-size: 18px;
+        
+    }
+   td{
+  padding: 10px 2px;
+  font-size: 10px;
+
+   }
+   .btn-3{
+    padding: 3px 3px;
+   }
+}
+@media(max-width:360px){
+    .heding h1{
+        font-size: 18px;
+        
+    }
+   td{
+  padding: 10px 2px;
+  font-size: 9px;
+  flex-wrap: wrap;
+
+   }
+   .btn-3{
+    padding: 3px 3px;
+   }
+}
+/* Add product section Responsivness */
+
+@media (max-width:450px){
+    .form{
+        width: 350px;
+        height: 600px;
+    }
+}
